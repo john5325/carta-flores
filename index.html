@@ -354,13 +354,13 @@
     tallo: 3200,                 // ms que tarda cada tallo en crecer (sube = más lento)
     escalonado: 3600,            // ms entre la primera flor y la última
     apertura: 1300,              // ms que tarda cada flor en abrirse
-    botonPersonalizar: true,     // ponlo en false para ocultar el botón ✎
+    botonPersonalizar: false,     // ponlo en false para ocultar el botón ✎
     ignorarReducirMovimiento: true  // pon true si tu equipo tiene activado "Reducir movimiento"
                                       // y aun así quieres ver crecer las flores animadas
   };
 
   var reduced = AJUSTES.ignorarReducirMovimiento
-    ? true
+    ? false
     : window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ============================================================
